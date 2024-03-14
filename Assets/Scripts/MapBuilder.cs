@@ -100,7 +100,7 @@ public class MapBuilder : MonoBehaviour
 
     private void SetTileColor(Color color)
     {
-        if (_currentTileInstance.TryGetComponent<Colorize>(out Colorize colorize))
+        if (_currentTileInstance.TryGetComponent<Tile>(out Tile colorize))
         {
             colorize.ChangeColor(color);
         }
